@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F3F5FC;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    padding: 50px;
+    align-items: end; /*eixo y*/
+    justify-content: center; /*eixo x*/
+}
+
+section {
+    margin: 30px;
+}
+
+textarea {
+    text-transform: lowercase;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.aviso {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #495057;
+}
+
+ion-icon {
+    color: black;
+    height: 20px;
+}
+
+.boxfinal {
+    background-color: white;
+    text-align: center;
+    box-shadow: rgb(53, 53, 53) 4px 4px 5px;
+    border-radius: 20px;
+    height: 944px;
+    width: 400px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxfinal textarea {
+    height: 700px;
+}
+
+.textofinal {
+    background-color: white;
+    background-image: url(./bgimg.png);
+    background-repeat:no-repeat;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.textofinal img {
+    width: 50%;
+}
+
+.textoinicial {
+    height: 700px;
+}
+
+.descriptografar, .criptografar, .copiar {
+    padding: 10px;
+    border-radius: 24px;
+    width: 328px;
+    margin: 30px;
+}
+
+.criptografar {
+    background-color: #0A3871;
+    border: solid #0A3871 2px;
+    color: white;
+}
+
+.descriptografar {
+    color: #0A3871;
+    border: solid #0A3871 2px;
+    background-color: #D8DFE8;
+}
