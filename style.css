@@ -3,14 +3,24 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: #F3F5FC;
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 400;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header img {
+    border-radius: 100%;
+    max-height: 80px;
+    max-width: 80px;
 }
 
 main {
     display: flex;
     padding: 50px;
-    align-items: end; /*eixo y*/
+    align-items: stretch; /*eixo y*/
     justify-content: center; /*eixo x*/
 }
 
@@ -23,6 +33,24 @@ textarea {
     box-sizing: border-box;
     padding: 10px;
     border: none;
+}
+
+.boxfinal {
+    padding-top: 10px;
+    background-color: white;
+    box-shadow: rgb(53, 53, 53) 4px 4px 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textofinal {
+    background-color: white;
+    background-image: url(./bgimg.png);
+    background-repeat:no-repeat;
+    text-align: center;
 }
 
 ::placeholder {
@@ -40,45 +68,12 @@ ion-icon {
     height: 20px;
 }
 
-.boxfinal {
-    background-color: white;
-    text-align: center;
-    box-shadow: rgb(53, 53, 53) 4px 4px 5px;
-    border-radius: 20px;
-    height: 944px;
-    width: 400px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-}
-
-.boxfinal textarea {
-    height: 700px;
-}
-
-.textofinal {
-    background-color: white;
-    background-image: url(./bgimg.png);
-    background-repeat:no-repeat;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.textofinal img {
-    width: 50%;
-}
-
-.textoinicial {
-    height: 700px;
-}
-
 .descriptografar, .criptografar, .copiar {
     padding: 10px;
     border-radius: 24px;
     width: 328px;
     margin: 30px;
+    display: inline-block;
 }
 
 .criptografar {
