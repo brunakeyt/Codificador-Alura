@@ -7,8 +7,13 @@
     font-weight: 400;
 }
 
+body {
+    box-sizing: border-box;
+}
+
 header, footer {
     text-align: center;
+    padding: 10px;
 }
 
 header img {
@@ -33,6 +38,7 @@ textarea {
     box-sizing: border-box;
     padding: 10px;
     border: none;
+    width: 90%;
 }
 
 .boxfinal {
@@ -73,7 +79,6 @@ ion-icon {
     border-radius: 24px;
     width: 328px;
     margin: 30px;
-    display: inline-block;
 }
 
 .criptografar {
@@ -86,4 +91,86 @@ ion-icon {
     color: #0A3871;
     border: solid #0A3871 2px;
     background-color: #D8DFE8;
+}
+
+/*para telas de até 768px*/
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: 32px;
+    }
+    
+    main {
+        display: block;
+        padding: 30px;
+        margin: auto auto;
+    }
+
+    section {
+        margin: 0px;
+    }
+
+    .boxfinal {
+        max-width: 1174px;
+    }
+
+    .textofinal {
+        background-image: none;
+    }
+    
+    .aviso {
+        font-size: 15px;
+    }
+    
+    ion-icon {
+        height: 15px;
+    }
+    
+    .descriptografar, .criptografar, .copiar {
+        padding: 10px;
+        border-radius: 24px;
+        width: 332px;
+        margin: 20px;
+    }
+}
+
+/*para telas de até 375px*/
+@media only screen and (max-width: 375px) {
+    * {
+        font-size: 25px;
+    }
+
+    main {
+        display: block;
+        padding: 20px;
+    }
+    
+    section {
+        margin: 0px;
+    }
+    
+    .textofinal {
+        background-image: none;
+    }
+    
+    .aviso {
+        font-size: 15px;
+    }
+    
+    ion-icon {
+        height: 15px;
+    }
+
+    #btn {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .descriptografar, .criptografar, .copiar {
+        padding: 10px;
+        border-radius: 24px;
+        width: 300px;
+        margin: 10px;
+        display: inline-block;
+    }
+    
 }
